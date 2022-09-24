@@ -29,6 +29,7 @@ class AdvertisementController extends Controller
         return view("pages.backends.advertisement.index",["advertisement"=>$advertisement, "ststus"=>$ststus]);	
 	}
 
+    
         
     public function update(Request $request,$id){
         $advertisement = Advertisement::find($id);
